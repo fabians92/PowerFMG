@@ -77,7 +77,7 @@ function Invoke-FMGRestMethod {
         [Parameter (ParameterSetName = "filter_build")]
         [string]$filter_attribute,
         [Parameter(Mandatory = $false)]
-        [ValidateSet('equal', 'contains')]
+        [ValidateSet('equal', 'contains', 'like')]
         [Parameter (ParameterSetName = "filter_build")]
         [string]$filter_type,
         [Parameter (Mandatory = $false)]
